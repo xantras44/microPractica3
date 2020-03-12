@@ -1,6 +1,6 @@
 <select id="Comunidad">
-
+    <option *ngFor='let comunidades of getComunidades(); let indice = index'>{{Comunidades[indice][1]}}</option>
 </select>
 <select id="Provincia">
-
+    <option>Gilipollas</option>
 </select>

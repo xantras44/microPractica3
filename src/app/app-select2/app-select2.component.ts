@@ -6,7 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app-select2.component.scss']
 })
 export class AppSelect2Component implements OnInit {
+  public Comunidades:Array<[string,number]>=[['Castilla',0],['Madrid',1]];
+  public Comunidad:string="";
+  public Provincia:string="";
+  public a:string="";
+  
 
+  public getComunidades()
+  {
+    return this.Comunidades;
+  }
+  devolverProvincia() {
+    
+  }
   constructor() { }
 
   ngOnInit() {
